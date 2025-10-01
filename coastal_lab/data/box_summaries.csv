@@ -1,4 +1,4 @@
 box,n,mean_z,median_z,zmin,zmax,class_counts
-Box 1 (bottom),48428,-6.406218922937143,-6.54,-12.49,12.03,"{0: 34074, 1: 12713, 2: 1518, 3: 123}"
-Box 2 (middle),1607,-11.886614810205351,-11.12,-16.5,-8.91,"{0: 1607, 1: 0, 2: 0, 3: 0}"
-Box 3 (top),412,-14.102669902912622,-13.9,-17.1,-11.8,"{0: 412, 1: 0, 2: 0, 3: 0}"
+Box 1 (bottom),48428,-6.406218922937143,-6.54,-12.49,12.03,"{'-8 ≤ Z < 0 (upper shoreface)': 30738, '-20 ≤ Z < -8 (lower shoreface)': 16049, '0 ≤ Z < 3 (beach/intertidal)': 1419, 'Z ≥ 3 (dunes)': 222, 'Z < -20 (offshore)': 0}"
+Box 2 (middle),1607,-11.886614810205351,-11.12,-16.5,-8.91,"{'-20 ≤ Z < -8 (lower shoreface)': 1607, 'Z < -20 (offshore)': 0, '-8 ≤ Z < 0 (upper shoreface)': 0, '0 ≤ Z < 3 (beach/intertidal)': 0, 'Z ≥ 3 (dunes)': 0}"
+Box 3 (top),412,-14.102669902912622,-13.9,-17.1,-11.8,"{'-20 ≤ Z < -8 (lower shoreface)': 412, 'Z < -20 (offshore)': 0, '-8 ≤ Z < 0 (upper shoreface)': 0, '0 ≤ Z < 3 (beach/intertidal)': 0, 'Z ≥ 3 (dunes)': 0}"
