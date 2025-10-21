@@ -129,10 +129,18 @@ def parallel_plots_many_policies(
         uds.append(str(round(i[0], 1)))
         ds.append(str(round(i[1], 1)))
 
+    # norm_df["Name"] = "All Solutions"
+    # for i, solution_index in enumerate(solution_indices):
+    #     norm_df.loc[solution_index, "Name"] = solution_names[i]
+    #     norm_df = norm_df.append(norm_df.loc[solution_index, :].copy())
     norm_df["Name"] = "All Solutions"
-    for i, solution_index in enumerate(solution_indices):
-        norm_df.loc[solution_index, "Name"] = solution_names[i]
-        norm_df = norm_df.append(norm_df.loc[solution_index, :].copy())
+    for i, idx in enumerate(solution_indices):
+        # ensure the index exists
+        if idx not in norm_df.index:
+            raise IndexError(f"solution index {idx} not in DataFrame index")
+        norm_df.loc[idx, "Name"] = solution_names[i]
+        dup = norm_df.loc[[idx], :].copy()  # keep as DataFrame
+        norm_df = pd.concat([norm_df, dup], axis=0)  # pandas 2.x-safe
 
     fig = plt.figure()
 
@@ -159,8 +167,8 @@ def parallel_plots_many_policies(
     labels = ["All Solutions"] + solution_names
 
     plt.legend(
-        flip([handles_dict[label] for label in labels], 4),
-        flip(labels, 4),
+        list(flip([handles_dict[label] for label in labels], 4)),
+        list(flip(labels, 4)),
         bbox_to_anchor=(0.0, 1.02, 1.0, 0.102),
         loc=3,
         ncol=4,
