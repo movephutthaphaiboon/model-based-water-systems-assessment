@@ -102,7 +102,8 @@ def flip(items, ncol):
 def parallel_plots_many_policies(
     obj_df,
     solution_indices=[],
-    solution_names=[]
+    solution_names=[],
+    in_alpha=0.8,
 ):
 
     names_unit_direction = {
@@ -160,7 +161,7 @@ def parallel_plots_many_policies(
             "red",
         ],
         linewidth=7,
-        alpha=0.1,
+        alpha=in_alpha,
     )
     handles, labels = plt.gca().get_legend_handles_labels()
     handles_dict = dict(zip(labels, handles))
