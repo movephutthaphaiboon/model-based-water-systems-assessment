@@ -103,6 +103,7 @@ def parallel_plots_many_policies(
     obj_df,
     solution_indices=[],
     solution_names=[],
+    alpha=0.8,
 ):
 
     names_unit_direction = {
@@ -160,7 +161,7 @@ def parallel_plots_many_policies(
             "red",
         ],
         linewidth=7,
-        alpha=0.8,
+        #alpha=0.8,
     )
     handles, labels = plt.gca().get_legend_handles_labels()
     handles_dict = dict(zip(labels, handles))
