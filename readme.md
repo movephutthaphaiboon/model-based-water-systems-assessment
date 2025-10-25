@@ -5,7 +5,7 @@ This repository contains several models and analyses developed as part of the TP
 ## The Final Assignment: The Nile River Basin Analysis
 
 ### 1. **Code**
-The code for the final assignment, which focuses on the analysis of the Nile River Basin, can be found in the following file: [`TPM802A_River_Basin_Tradeoff_vulnerability_analysis_revised.ipynb`](https://github.com/movephutthaphaiboon/model-based-water-systems-assessment/blob/main/TPM802A_River_Basin_Tradeoff_vulnerability_analysis_revised.ipynb)
+The code for the final assignment can be found in the following file: [`TPM802A_River_Basin_Tradeoff_vulnerability_analysis_revised.ipynb`](https://github.com/movephutthaphaiboon/model-based-water-systems-assessment/blob/main/TPM802A_River_Basin_Tradeoff_vulnerability_analysis_revised.ipynb)
 
 
 ### 2. **Scenario Testing Results**
